@@ -10,12 +10,6 @@ notifier.continuousNotify = true
 apply plugin: 'scala'
 apply plugin: 'idea'
 
-flyway {
-    url = "$System.env.DB_URL"
-    user = "$System.env.DB_USER"
-    password = "$System.env.DB_PASSWORD"
-}
-
 repositories {
     mavenCentral()
     jcenter()
